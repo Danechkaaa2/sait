@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог – GUT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>GUT</h1>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog">
+      <h2>Каталог кухонь</h2>
+      <div class="filter-controls">
+  <label for="style-filter">Фильтр по стилю:</label>
+  <select id="style-filter">
+    <option value="all">Все</option>
+    <option value="classic">Классика</option>
+    <option value="modern">Модерн</option>
+    <option value="minimal">Минимализм</option>
+    <option value="loft">Лофт</option>
+  </select>
+</div>
+      <div class="catalog-grid">
+        <div class="catalog-item classic">
+          <img src="images/kitchen1.jpg" alt="Milano Nero">
+          <h3>Milano Nero</h3>
+          <div class="info-icon">ℹ</div>
+          <p>Современная кухня в чёрном матовом цвете с акцентами под латунь.</p>
+        </div>
+        <div class="catalog-item minimal">
+          <img src="images/kitchen2.jpg" alt="Imperial Gold">
+          <h3>Imperial Gold</h3>
+          <div class="info-icon">ℹ</div>
+          <p>Элегантный гарнитур с золотой фурнитурой и лаконичными фасадами.</p>
+        </div>
+        <div class="catalog-item modern">
+          <img src="images/kitchen3.jpg" alt="Noir Élite">
+          <h3>Noir Élite</h3>
+          <div class="info-icon">ℹ</div>
+          <p>Французский стиль в глубоких тонах с каменной столешницей.</p>
+        </div>
+        <div class="catalog-item modern">
+          <img src="images/kitchen4.jpg" alt="Verona Luxe">
+          <h3>Verona Luxe</h3>
+          <div class="info-icon">ℹ</div>
+          <p>Классика и комфорт — светлая кухня с резными фасадами.</p>
+        </div>
+        <div class="catalog-item classic">
+  <img src="images/kitchen5.jpg" alt="Oslo Matte">
+  <h3>Oslo Matte</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Скандинавская кухня с матовыми фасадами и натуральным деревом.</p>
+</div>
+<div class="catalog-item loft">
+  <img src="images/kitchen6.jpg" alt="Berlin Steel">
+  <h3>Berlin Steel</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Индустриальный стиль с серыми фасадами и чёрной фурнитурой.</p>
+</div>
+<div class="catalog-item classic">
+  <img src="images/kitchen7.jpg" alt="Roma Classico">
+  <h3>Roma Classico</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Итальянская классика в светлом исполнении с витражами и колоннами.</p>
+</div>
+<div class="catalog-item minimal">
+  <img src="images/kitchen8.jpg" alt="Tokyo Line">
+  <h3>Tokyo Line</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Минималистичная кухня в японском духе — строго, лаконично, элегантно.</p>
+</div>
+<div class="catalog-item modern">
+  <img src="images/kitchen9.jpg" alt="Paris Blanc">
+  <h3>Paris Blanc</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Светлая кухня в стиле прованс с фрезеровкой и мягкими линиями.</p>
+</div>
+<div class="catalog-item loft">
+  <img src="images/kitchen10.jpg" alt="New York Loft">
+  <h3>New York Loft</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Темные фасады, бетонная текстура и открытые полки в стиле лофт.</p>
+</div>
+<div class="catalog-item minimal">
+  <img src="images/Kitchen11.jpg" alt="Vienna Silk">
+  <h3>Vienna Silk</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Шелковистые фасады кремового цвета с встроенной подсветкой.</p>
+</div>
+<div class="catalog-item loft">
+  <img src="images/kitchen12.jpg" alt="Dubai Black">
+  <h3>Dubai Black</h3>
+  <div class="info-icon">ℹ</div>
+  <p>Глянцевая черная кухня с позолоченными ручками и барной стойкой.</p>
+</div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GUT | Роскошные кухни на заказ</p>
+  </footer>
+  
+<div class="modal" id="kitchen-modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="modal-title"></h3>
+    <img id="modal-image" src="" alt="">
+    <p id="modal-description"></p>
+    <p><strong>Материалы:</strong> <span id="modal-materials"></span></p>
+    <p><strong>Цена:</strong> <span id="modal-price"></span></p>
+    <a id="review-link" class="review-link-btn" href="#">Смотреть отзывы</a>
+  </div>
+</div>
+<script src="catalog.js"></script>
+</body>
+</html>

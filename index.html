@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GUT - Главная</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <h1>GUT</h1>
+    <div class="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </div>
+  </header>
+
+  <main>
+    
+    <section class="video-wrapper">
+      <iframe width="800" height="450" src="https://youtu.be/Hg-_Js0e6FU"
+        title="Видео о кухнях" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="portfolio">
+  <h2>Наши работы</h2>
+  <div class="collage">
+  <a class="kitchen-item" href="catalog.html?model=milano">
+    <img src="images/kitchen1.jpg" alt="Milano Nero">
+    <p class="caption">Milano Nero</p>
+  </a>
+
+  <a class="kitchen-item" href="catalog.html?model=imperial">
+    <img src="images/kitchen2.jpg" alt="Imperial Gold">
+    <p class="caption">Imperial Gold</p>
+  </a>
+
+  <a class="kitchen-item" href="catalog.html?model=noir">
+    <img src="images/kitchen3.jpg" alt="Noir Élite">
+    <p class="caption">Noir Élite</p>
+  </a>
+
+  <a class="kitchen-item" href="catalog.html?model=verona">
+    <img src="images/kitchen4.jpg" alt="Verona Luxe">
+    <p class="caption">Verona Luxe</p>
+  </a>
+
+  <a class="kitchen-item" href="catalog.html?model=oslo">
+    <img src="images/kitchen5.jpg" alt="Oslo Matte">
+    <p class="caption">Oslo Matte</p>
+  </a>
+
+  <a class="kitchen-item" href="catalog.html?model=berlin">
+    <img src="images/kitchen6.jpg" alt="Berlin Steel">
+    <p class="caption">Berlin Steel</p>
+  </a>
+</div>
+</section>
+  </main>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Кухни, созданные для вдохновения</h2>
+            <p>Индивидуальные проекты, премиум материалы, вечная элегантность.</p>
+            <p>В «Люкс Кухни» мы создаем не просто мебель — мы создаем атмосферу. Каждая кухня разрабатывается с учётом вашего пространства, стиля жизни и вкуса. Мы объединяем европейское качество, инновационные решения и безупречный сервис, чтобы ваша кухня стала центром уюта и вдохновения.</p>
+            <p>Вы выбираете: цвет, форму, материалы — мы воплощаем это в реальность с точностью до миллиметра.</p>
+        </div>
+    </section>
+
+
+  <footer>
+    <p>&copy; 2025 GUT | Стиль. Качество. Индивидуальность.</p>
+  </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("active");
+  }
+  </script>
+  
+</body>
+</html>
